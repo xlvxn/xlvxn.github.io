@@ -1,459 +1,203 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
+<title>TITLE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 
-        <!-- ==============================================
-        Basic Page Needs
-        =============================================== -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style id="" media="all">/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<link href="common-css/ionicons.css" rel="stylesheet">
+<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+<link href="03-comming-soon/css/styles.css" rel="stylesheet">
+<link href="03-comming-soon/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-area center-text" style="background-image:url(images/countdown-3-1600x900.jpg);">
+<div class="display-table">
+<div class="display-table-cell">
+<h1 class="title font-white"><b>Comming Soon</b></h1>
+<p class="desc font-white">Our website is currently undergoing scheduled maintenance.
+We Should be back shortly. Thank you for your patience.</p>
+<a class="notify-btn" href="#"><b>NOTIFY US</b></a>
+<ul class="social-btn font-white">
+<li><a href="#">facebook</a></li>
+<li><a href="#">twitter</a></li>
+<li><a href="#">google</a></li>
+<li><a href="#">instagram</a></li>
+</ul>
+</div>
+</div>
+</div>
 
-        <title>Alvin Portofolio</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <meta name="description" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
-        <meta name="subject" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
-        <meta name="author" content="Codings">
-
-        <!-- ==============================================
-        Favicons
-        =============================================== -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
-
-        <!-- ==============================================
-        Vendor Stylesheet
-        =============================================== -->
-        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/slider.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/gallery.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/cookie-notice.min.css">
-
-        <!-- ==============================================
-        Custom Stylesheet
-        =============================================== -->
-        <link rel="stylesheet" href="assets/css/default.css">
-        <link rel="stylesheet" href="assets/css/theme-light-green.css">
-
-        <!-- ==============================================
-        Theme Settings
-        =============================================== -->
-        <style>
-            :root {
-                --header-bg-color: #111111;
-                --nav-item-color: #f5f5f5;
-                --top-nav-item-color: #f5f5f5;
-                --hero-bg-color: #040402;
-
-                --section-1-bg-color: #040402;
-                --section-2-bg-color: #040402;
-                --section-3-bg-color: #040402;
-                --section-4-bg-color: #040402;
-                --section-5-bg-color: #040402;
-                --section-6-bg-color: #040402;
-                
-                --footer-bg-color: #111111;
-            }
-        </style>
-        
-    </head>
-
-    <body class="home theme-mode-dark">
-
-        <!-- Header -->
-        <header id="header">
-
-            <!-- Navbar -->
-            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
-                <div class="container header">
-
-                    <!-- Navbar Brand-->
-                    <a class="navbar-brand" href="index.html">
-                        Alvin<i class="leverage-2-0">Portofolio</i>
-                    </a>
-
-                    <!-- Nav holder -->
-                    <div class="ml-auto"></div>
-
-                    <!-- Navbar Items -->
-                    <ul class="navbar-nav items">
-                        
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link smooth-anchor">Skill</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link smooth-anchor">Portofolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#footer" class="nav-link smooth-anchor">Kontak</a>
-                        </li>
-                    </ul>
-
-                    
-                </div>
-            </nav>
-
-        </header>
-
-        <!-- Hero -->
-        <section id="slider" class="hero p-0 odd featured right">
-            <div class="swiper-container no-slider animation slider-h-100">
-                <div class="swiper-wrapper">
-
-                    <!-- Item 1 -->
-                    <div class="swiper-slide slide-center">
-                        <img data-aos="zoom-out-up" data-aos-delay="800" src="assets/gambar/me.png" class="hero-image" alt="Hero Image">
-                        <div class="slide-content row" data-mask-768="70">
-                            <div class="col-12 d-flex inner">
-                                <div class="left align-self-center text-center text-md-left">
-                                    <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">Hello!<br> I'm Alvin.</h1>
-                                    <p data-aos="zoom-out-up" data-aos-delay="800" class="description">I am an enthusiast of technology especially in making apps.<br>
-                                    My work is related to digital solutions.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section-2 odd counter skills featured left">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Skill Utama</h2>
-                        <p class="text-max-800">Berikut beberapa keahlian & kompetensi saya *(persentasi skill hanyalah kisaran gambaran dan bersifat subjektif berdasarkan pengalaman saya selama ini).</p>
-                    </div>
-                </div>
-                <div data-aos-id="counter" data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="88" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>PHP Native/Framework</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="60" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>Java (Android/Desktop)</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="29" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>React Native (Android/iOS)</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="89" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>WordPress</h4>
-                    </div>
-                </div>
-
-                <!-- kedua -->
-                <div data-aos-id="counter" data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="90" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>MySQL (Database)</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="40" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>C# (Desktop)</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="85" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>Adobe Premiere Pro</h4>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 item">
-                        <div data-percent="80" class="radial">
-                            <span></span>
-                        </div>
-                        <h4>Microsoft Office</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="section-3 odd offers secondary featured left">
-            <div class="container">
-                <div class="row text-center intro">
-                    <div class="col-12">
-                        <h2>Portofolio Saya</h2>
-                        <p class="text-max-800">Berikut beberapa aplikasi yang telah di develop dan masih banyak aplikasi lainnya yang belum di tampilkan pada portfolio ini.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Sistem Seleksi Penerimaan Bantuan Sosial</h4>
-                            <p>(Web & Mobile View) SPK untuk menyeleksi warga & UMKM layak menerima bantuan sosial dengan algoritma c4.5</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/algo_c45.png">
-                                    <img src="assets/gambar/algo_c45.png" alt="Sistem Seleksi Penerimaan Bantuan Sosial">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Manajemen Data Pemilih Pilkada</h4>
-                            <p>(Web & Mobile View) Manajemen data pemilih pada pilkada untuk salah satu calon pasangan di kalimantan utara.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/pilkada.png">
-                                    <img src="assets/gambar/pilkada.png" alt="Manajemen Data Pemilih Pilkada">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>SIDAK BERITA</h4>
-                            <p>(WEB & Mobile View) Sistem Informasi Data Kependudukan Berbasis Digital (SIDAK BERITA) pada salah satu kantor camat di kabupaten bone, sulawesi-selatan.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/sidak.png">
-                                    <img src="assets/gambar/sidak.png" alt="SIDAK BERITA">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Sistem Manajemen Desa</h4>
-                            <p>(Web) Manajemen data pemerintah desa, penduduk, administrasi desa dll.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/k1.png">
-                                    <img src="assets/gambar/k1.png" alt="Sistem Manajemen Desa">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Labeling Aset Diskominfo</h4>
-                            <p>(Android) Pengelolaan data aset Diskominfo Makassar dengan Qr-Code maker & Qr-Code scanner.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/k2.png">
-                                    <img src="assets/gambar/k2.png" alt="Labeling Aset Diskominfo">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Manajemen Data KKLP</h4>
-                            <p>(Web) Official Manajemen Data KKLP di kampus STMIK Dipanegara Makassar</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/2.png">
-                                    <img src="assets/gambar/2.png" alt="Manajemen Data KKLP">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kedua -->
-            <div class="container">
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Kearsipan Kabupaten Sinjai</h4>
-                            <p>(Web) Sistem informasi perpustakaan dan kearsipan kabupaten sinjai.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/3.png">
-                                    <img src="assets/gambar/3.png" alt="(Web) Sistem informasi perpustakaan dan kearsipan kabupaten sinjai.">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>Pengajuan Pengadaan Barang</h4>
-                            <p>(Android) Sistem Pengajuan Pengadaan Barang di salah satu kantor Dinas di Makassar.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/k5.png">
-                                    <img src="assets/gambar/k5.png" alt="Pengajuan Pengadaan Barang">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Bongkar Rampung PLN Sengkang</h4>
-                            <p>(Web) Sistem pelaporan bongkar rampung dan pelayanan khusus PLN ULP Sengkang</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/4.png">
-                                    <img src="assets/gambar/4.png" alt="Bongkar Rampung PLN Sengkang">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ketiga -->
-            <div class="container">
-                <div class="row justify-content-center text-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Pengelolaan Penelitian Dosen</h4>
-                            <p>(Web) Sistem pengelolaan data penelitian dan pengabdian masyarakat.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/1.png">
-                                    <img src="assets/gambar/1.png" alt="(Web) Sistem pengelolaan data penelitian dan pengabdian masyarakat.">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <h4>E-Commerce Kelompok Tani</h4>
-                            <p>(Android & Web) Jual beli hasil tani dimana para penjual dari salah satu kelompok tani di takalar.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/k9.png">
-                                    <img src="assets/gambar/k9.png" alt="E-Commerce Kelompok Tani">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card featured">
-                            <h4>Sistem Informasi Pajak Kendaraan</h4>
-                            <p>(Web) Sistem informasi data kendaraan kantor samsat bulukumba.</p>
-                            <div class="gallery">
-                                <a href="assets/gambar/k3.png">
-                                    <img src="assets/gambar/k3.png" alt="Sistem Informasi Pajak Kendaraan">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="odd">
-
-            <!-- Footer [links] -->
-            <section id="footer" class="footer">
-                <div class="container">
-                    <div class="row items footer-widget">
-                        <div class="col-12 col-lg-3 p-0">
-                            <div class="row">
-                                <div class="branding col-12 p-3 text-center text-lg-left item">
-                                    <div class="brand">
-                                        <a href="index.html" class="logo">
-                                            .vin                                 
-                                        </a>
-                                    </div>
-                                    <p>Thank You.</p>
-                                    <!-- <ul class="navbar-nav social share-list mt-0 ml-auto">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link"><i class="icon-social-instagram ml-0"></i></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link"><i class="icon-social-facebook"></i></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link"><i class="icon-social-linkedin"></i></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link"><i class="icon-social-twitter"></i></a>
-                                        </li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-9 p-0">                            
-                            <div class="row">
-                                <div class="col-12 col-lg-4 p-3 text-center text-lg-left item">
-                                    <h4 class="title">Kontak</h4>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-phone mr-2"></i>
-                                                +62 822 5002 4515
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-envelope mr-2"></i>
-                                                alvin.fauzi.aulia@gmail.com
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-location-pin mr-2"></i>
-                                                Samata, Gowa
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Copyright -->
-            <section id="copyright" class="p-3 copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-
-                        </div>
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
-
-        <!-- Scroll [to top] -->
-        <div id="scroll-to-top" class="scroll-to-top">
-            <a href="#header" class="smooth-anchor">
-                <i class="icon-arrow-up"></i>
-            </a>
-        </div>        
-        
-        <script src="assets/js/vendor/jquery.min.js"></script>
-        <script src="assets/js/vendor/jquery.easing.min.js"></script>
-        <script src="assets/js/vendor/jquery.inview.min.js"></script>
-        <script src="assets/js/vendor/popper.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/ponyfill.min.js"></script>
-        <script src="assets/js/vendor/slider.min.js"></script>
-        <script src="assets/js/vendor/animation.min.js"></script>
-        <script src="assets/js/vendor/progress-radial.min.js"></script>
-        <script src="assets/js/vendor/bricklayer.min.js"></script>
-        <script src="assets/js/vendor/gallery.min.js"></script>
-        <script src="assets/js/vendor/shuffle.min.js"></script>
-        <script src="assets/js/vendor/cookie-notice.min.js"></script>
-        <script src="assets/js/vendor/particles.min.js"></script>
-        <script src="assets/js/main.js"></script>
-
-    </body>
+  gtag('config', 'UA-23581568-13');
+</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"67f78329a9fceac3","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.0","si":10}'></script>
+</body>
 </html>
